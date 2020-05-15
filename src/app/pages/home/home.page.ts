@@ -38,6 +38,7 @@ textnotification:string;
   constructor(public navCtrl: NavController,public localnotification:LocalNotifications,private routerinbox: ActivatedRoute,public global:GlobalService, public tb:TabspagePage,public apiwebservice:ApiwebService,public actionSheetController: ActionSheetController,public modalController: ModalController) 
   { 
     console.log("entered ngonit home ")
+    console.log("entered ngonit home ")
   }
  
   ngOnInit() 
