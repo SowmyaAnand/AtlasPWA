@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      
+      <ion-buttons slot="start">
+        <ion-back-button ></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Filter Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+<ion-list lines="none">
+  <ion-item>
+    <ion-label style="font-weight: bolder;" >From Date</ion-label>
+  </ion-item>
+  <ion-item text-center>
+    <ion-label>
+      <ion-datetime style="background-color: #D3D3D3" placeholder="Select Date" required [(ngModel)]="fromdte"></ion-datetime>
+
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label style="margin-top: 20px;font-weight: bolder;">To Date</ion-label>
+  </ion-item>
+  <ion-item text-center>
+    <ion-label>
+      <ion-datetime style="background-color: #D3D3D3" placeholder="Select Date" required [(ngModel)]="todte"></ion-datetime>
+
+    </ion-label>
+  </ion-item>
+  <ion-item text-center style="margin-top: 50px;">
+    <ion-label>
+      <ion-button color="primary" (click)="filterpage()" >Filter Posts</ion-button>
+    </ion-label>
+    
+  </ion-item>
+</ion-list>
+
+</ion-content>
+

@@ -1,0 +1,8 @@
+{
+  "name": "atlaspwa",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

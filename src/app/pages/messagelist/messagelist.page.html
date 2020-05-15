@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+ 
+    <ion-buttons slot="start">
+     
+      <!-- <ion-back-button defaultHref="/home"></ion-back-button> -->
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      
+        
+      
+    
+    <ion-title>Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+         
+  
+    <ion-item (click)="Inboxcardclick(post.category,post.title,post.description,post.attachment,post.PostId,post.publishedby,post.newdate,post.date)" *ngFor="let post of posts">
+                  
+                  <span *ngIf="(getExtension(post) == 'jpg'||getExtension(post) == 'png'||getExtension(post) == 'jpeg')" > 
+                    <img  class="firstcard" src="http://192.168.43.80:3000/attachment/{{post.attachment}}" class="imagecard" height="80" width="80">
+                      </span>
+                      <span *ngIf="(getExtension(post) == 'pdf')"> 
+                        <img  class="firstcard" src="../../../assets/pdfimage.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(post) == 'xls'||getExtension(post)== 'xlsx' )"> 
+                        <img  class="firstcard" src="../../../assets/excel.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(post) == 'doc'||getExtension(post)== 'docx' )"> 
+                        <img  class="firstcard" src="../../../assets/word.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(post) == 'mp4'||getExtension(post) == 'AVI'||getExtension(post) == 'wmv')"> 
+                        <img  class="firstcard" src="../../../assets/video.png" class="imagecard" height="80" width="80" >
+                      </span>
+     
+       <ion-label>
+            <h2>{{post.title}}</h2>
+            <h3>{{post.description}}</h3>
+            
+          </ion-label>
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>

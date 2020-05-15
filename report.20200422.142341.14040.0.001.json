@@ -1,0 +1,601 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200422.142341.14040.0.001.json",
+    "dumpEventTime": "2020-04-22T14:23:42Z",
+    "dumpEventTimeStamp": "1587545622053",
+    "processId": 14040,
+    "threadId": null,
+    "cwd": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa",
+    "commandLine": [
+      "node",
+      "C:\\Users\\basker\\AppData\\Roaming\\npm\\\\node_modules\\@ionic\\cli\\bin\\ionic",
+      "serve"
+    ],
+    "nodejsVersion": "v13.11.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.11.0",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "6",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.11.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 1105437,
+        "nice": 0,
+        "sys": 1033765,
+        "idle": 14467171,
+        "irq": 76390
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 1098218,
+        "nice": 0,
+        "sys": 888546,
+        "idle": 14619328,
+        "irq": 15984
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 1221390,
+        "nice": 0,
+        "sys": 969937,
+        "idle": 14414765,
+        "irq": 8453
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 1262859,
+        "nice": 0,
+        "sys": 882218,
+        "idle": 14461015,
+        "irq": 6953
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "c0:14:3d:d3:64:b5",
+        "address": "2405:204:2206:4445:7964:3f76:fa7c:6155",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "c0:14:3d:d3:64:b5",
+        "address": "2405:204:2206:4445:7568:689d:d1fa:cee8",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "c0:14:3d:d3:64:b5",
+        "address": "fe80::7964:3f76:fa7c:6155",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "c0:14:3d:d3:64:b5",
+        "address": "192.168.43.80",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "anand"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7df152539",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11561"
+    },
+    {
+      "pc": "0x00007ff7df1569e9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29145"
+    },
+    {
+      "pc": "0x00007ff7df155868",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24664"
+    },
+    {
+      "pc": "0x00007ff7df27d272",
+      "symbol": "v8::base::CPU::has_sse+61266"
+    },
+    {
+      "pc": "0x00007ff7dfaab93e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff7dfa93091",
+      "symbol": "v8::SharedArrayBuffer::Externalize+785"
+    },
+    {
+      "pc": "0x00007ff7df95a0fc",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468"
+    },
+    {
+      "pc": "0x00007ff7df96215b",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3739"
+    },
+    {
+      "pc": "0x00007ff7df957643",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff7df955dd4",
+      "symbol": "v8::internal::Heap::AllocateExternalBackingStore+1396"
+    },
+    {
+      "pc": "0x00007ff7df977ea4",
+      "symbol": "v8::internal::Factory::NewFillerObject+196"
+    },
+    {
+      "pc": "0x00007ff7df6d2271",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1681"
+    },
+    {
+      "pc": "0x00007ff7dfef528d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+517453"
+    },
+    {
+      "pc": "0x00007ff7dff6545b",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+976667"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe7a7a9",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+14953"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe7a7a9",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+14953"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe7a7a9",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+14953"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe80bab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40555"
+    },
+    {
+      "pc": "0x00007ff7dfe7e70e",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+31182"
+    },
+    {
+      "pc": "0x00007ff7dfe7e2fc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+30140"
+    },
+    {
+      "pc": "0x00007ff7df9b5ef2",
+      "symbol": "v8::internal::Execution::CallWasm+1410"
+    },
+    {
+      "pc": "0x00007ff7df9b5869",
+      "symbol": "v8::internal::Execution::Call+185"
+    },
+    {
+      "pc": "0x00007ff7dfa89570",
+      "symbol": "v8::Function::Call+608"
+    },
+    {
+      "pc": "0x00007ff7df2fe6c4",
+      "symbol": "node::CallbackScope::~CallbackScope+1636"
+    },
+    {
+      "pc": "0x00007ff7df2f7feb",
+      "symbol": "v8::internal::compiler::Operator::EffectOutputCount+235"
+    },
+    {
+      "pc": "0x00007ff7df1c9933",
+      "symbol": "v8::internal::ParseInfo::max_function_literal_id+19907"
+    },
+    {
+      "pc": "0x00007ff7df1ca12c",
+      "symbol": "v8::internal::ParseInfo::max_function_literal_id+21948"
+    },
+    {
+      "pc": "0x00007ff7df1c4fd5",
+      "symbol": "v8::internal::ParseInfo::max_function_literal_id+1125"
+    },
+    {
+      "pc": "0x00007ff7df31f602",
+      "symbol": "uv_thread_self+2722"
+    },
+    {
+      "pc": "0x00007ff7df32249f",
+      "symbol": "uv_pipe_pending_type+3487"
+    },
+    {
+      "pc": "0x00007ff7df32c7cc",
+      "symbol": "uv_loop_init+860"
+    },
+    {
+      "pc": "0x00007ff7df32caf4",
+      "symbol": "uv_run+244"
+    },
+    {
+      "pc": "0x00007ff7df239ca1",
+      "symbol": "v8::internal::UnoptimizedCompilationInfo::feedback_vector_spec+30305"
+    },
+    {
+      "pc": "0x00007ff7df2a67f0",
+      "symbol": "node::Start+288"
+    },
+    {
+      "pc": "0x00007ff7df126afc",
+      "symbol": "RC4_options+340476"
+    },
+    {
+      "pc": "0x00007ff7dffb2c98",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+1294168"
+    },
+    {
+      "pc": "0x00007ffb80eb7974",
+      "symbol": "BaseThreadInitThunk+20"
+    },
+    {
+      "pc": "0x00007ffb83a9a271",
+      "symbol": "RtlUserThreadStart+33"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 11141120,
+    "totalCommittedMemory": 11141120,
+    "usedMemory": 10004176,
+    "availableMemory": 2118097384,
+    "memoryLimit": 2127560704,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047424,
+        "used": 1047360,
+        "available": 64
+      },
+      "old_space": {
+        "memorySize": 7483392,
+        "committedMemory": 7483392,
+        "capacity": 7435984,
+        "used": 7092168,
+        "available": 343816
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 261120,
+        "used": 246272,
+        "available": 14848
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790528,
+        "capacity": 789328,
+        "used": 517680,
+        "available": 271648
+      },
+      "large_object_space": {
+        "memorySize": 1077248,
+        "committedMemory": 1077248,
+        "capacity": 1064872,
+        "used": 1064872,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1.718,
+    "kernelCpuSeconds": 1.312,
+    "cpuConsumptionPercent": 0.543986,
+    "maxRss": 59162624,
+    "pageFaults": {
+      "IORequired": 27022,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 673,
+      "writes": 9
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\basker\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "ANAND",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "dp0": "C:\\Users\\basker\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\basker",
+    "IONIC_CLI_BIN": "C:\\Users\\basker\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli\\bin\\ionic",
+    "IONIC_CLI_LIB": "C:\\Users\\basker\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli",
+    "IONIC_CLI_LOCAL_ERROR": "LOCAL_CLI_NOT_FOUND",
+    "LOCALAPPDATA": "C:\\Users\\basker\\AppData\\Local",
+    "LOGONSERVER": "\\\\ANAND",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\basker\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\basker\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\basker\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\basker\\AppData\\Roaming\\npm;C:\\Users\\basker\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\basker\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\basker\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\basker\\AppData\\Local\\Temp",
+    "TVT": "C:\\Program Files (x86)\\Lenovo",
+    "USERDOMAIN": "ANAND",
+    "USERDOMAIN_ROAMINGPROFILE": "ANAND",
+    "USERNAME": "basker",
+    "USERPROFILE": "C:\\Users\\basker",
+    "windir": "C:\\WINDOWS",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.44.2",
+    "LANG": "en_US.UTF-8",
+    "COLORTERM": "truecolor",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVG\\Antivirus\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\SspiCli.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}

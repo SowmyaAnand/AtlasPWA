@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+ 
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/Trending"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="medium" >
+  <ion-item lines="none" color="medium">
+    <ion-avatar slot="start">
+      <img src="../../../assets/img/person.png">
+    </ion-avatar>
+    <ion-label style="padding:8px;color:#000" >
+      <h2>John Doe</h2>
+    </ion-label>
+  </ion-item>
+</ion-card>
+<ion-list>
+<ion-item lines="none">
+  <ion-label>Arpit jain</ion-label>
+</ion-item>
+<ion-item>
+  <ion-input placeholder="Title" required [(ngModel)]="title"></ion-input>
+</ion-item>
+<ion-item color="medium">
+  
+  <ion-textarea style="padding: 5px;" placeholder="Description" required [(ngModel)]="description"></ion-textarea>
+</ion-item>
+<div showWhen="android,ios">
+<!-- <ion-item lines="none" > 
+  <ion-label color="primary" (click)="addattachment()"> Add attachments </ion-label>
+
+</ion-item>  -->
+</div>
+<div showWhen="core" hideWhen="android,ios">
+<ion-item lines="none" >
+      <ion-input id="attachfile" type="file" accept="*" (click)="addattachment()" (change)="changeListener($event)"></ion-input>
+</ion-item>
+</div>
+<ion-item lines="none">
+  <img class="imagecard" >
+</ion-item >
+<ion-item text-center style="margin-top: 50px;" lines="none">
+  <ion-label>
+    <ion-button  style="width: 100%;" color="primary" (click)="postclick()">Post</ion-button>
+  </ion-label>
+  
+</ion-item>
+</ion-list>
+
+
+</ion-content>

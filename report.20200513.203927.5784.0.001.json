@@ -1,0 +1,365 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200513.203927.5784.0.001.json",
+    "dumpEventTime": "2020-05-13T20:39:27Z",
+    "dumpEventTimeStamp": "1589382567684",
+    "processId": 5784,
+    "threadId": null,
+    "cwd": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa",
+    "commandLine": [
+      "node",
+      "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa\\node_modules\\.bin\\\\..\\@angular\\cli\\bin\\ng",
+      "run",
+      "app:ionic-cordova-build",
+      "--platform=android"
+    ],
+    "nodejsVersion": "v13.11.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.11.0",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "6",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.11.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 883625,
+        "nice": 0,
+        "sys": 863796,
+        "idle": 7220046,
+        "irq": 45406
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 791015,
+        "nice": 0,
+        "sys": 701890,
+        "idle": 7474281,
+        "irq": 27203
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 859140,
+        "nice": 0,
+        "sys": 750718,
+        "idle": 7357328,
+        "irq": 6750
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 1093359,
+        "nice": 0,
+        "sys": 726343,
+        "idle": 7147484,
+        "irq": 7000
+      }
+    ],
+    "host": "ANAND"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7ce742539",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ce7469e9",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ce745868",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ce86d272",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cf09b93e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cf083091",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef4a0fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef25a83",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef23edb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef4f93d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef516ea",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef47643",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef45dd4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cef6f188",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ced8aeea",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cec4b88f",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cec863af",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cf4e528d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cf52dd8c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7cf470bab",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000036ae08a4412",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 486813696,
+    "totalCommittedMemory": 486813696,
+    "usedMemory": 389934952,
+    "availableMemory": 1673791664,
+    "memoryLimit": 2127560704,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16758784,
+        "used": 940208,
+        "available": 15818576
+      },
+      "old_space": {
+        "memorySize": 375009280,
+        "committedMemory": 375009280,
+        "capacity": 318144464,
+        "used": 317939312,
+        "available": 205152
+      },
+      "code_space": {
+        "memorySize": 3837952,
+        "committedMemory": 3837952,
+        "capacity": 2988736,
+        "used": 2988736,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 9179136,
+        "committedMemory": 9179136,
+        "capacity": 3350400,
+        "used": 3350400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 64348160,
+        "committedMemory": 64348160,
+        "capacity": 64138968,
+        "used": 64138968,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544288,
+        "used": 544288,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 67.703,
+    "kernelCpuSeconds": 19.906,
+    "cpuConsumptionPercent": 31.067,
+    "maxRss": 543252480,
+    "pageFaults": {
+      "IORequired": 397795,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 6216,
+      "writes": 5
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa",
+    "allusersprofile": "C:\\ProgramData",
+    "appdata": "C:\\Users\\basker\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "colorterm": "truecolor",
+    "commonprogramfiles": "C:\\Program Files\\Common Files",
+    "commonprogramfiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "commonprogramw6432": "C:\\Program Files\\Common Files",
+    "computername": "ANAND",
+    "comspec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "dp0": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa\\node_modules\\.bin\\",
+    "driverdata": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "force_color": "1",
+    "fps_browser_app_profile_string": "Internet Explorer",
+    "fps_browser_user_profile_string": "Default",
+    "fp_no_host_check": "NO",
+    "homedrive": "C:",
+    "homepath": "\\Users\\basker",
+    "ionic_cli_bin": "C:\\Users\\basker\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli\\bin\\ionic",
+    "ionic_cli_lib": "C:\\Users\\basker\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli",
+    "ionic_cli_local_error": "LOCAL_CLI_NOT_FOUND",
+    "lang": "en_US.UTF-8",
+    "localappdata": "C:\\Users\\basker\\AppData\\Local",
+    "logonserver": "\\\\ANAND",
+    "number_of_processors": "4",
+    "onedrive": "C:\\Users\\basker\\OneDrive",
+    "onedriveconsumer": "C:\\Users\\basker\\OneDrive",
+    "os": "Windows_NT",
+    "path": "C:\\Users\\basker\\Desktop\\AngularProject\\atlaspwa\\node_modules\\.bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\basker\\AppData\\Local\\Android\\Sdk\\platforms;C:\\Users\\basker\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Users\\basker\\.gradle\\wrapper\\dists\\gradle-5.6.4-all\\ankdp27end7byghfw1q2sw75f\\gradle-5.6.4\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\basker\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\basker\\AppData\\Roaming\\npm;C:\\Users\\basker\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\basker\\.gradle\\wrapper\\dists\\gradle-5.6.4-all\\ankdp27end7byghfw1q2sw75f\\gradle-5.6.4\\bin;",
+    "pathext": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "processor_architecture": "AMD64",
+    "processor_identifier": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "processor_level": "6",
+    "processor_revision": "3a09",
+    "programdata": "C:\\ProgramData",
+    "programfiles": "C:\\Program Files",
+    "programfiles(x86)": "C:\\Program Files (x86)",
+    "programw6432": "C:\\Program Files",
+    "prompt": "$P$G",
+    "psmodulepath": "C:\\Users\\basker\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "public": "C:\\Users\\Public",
+    "sessionname": "Console",
+    "systemdrive": "C:",
+    "systemroot": "C:\\WINDOWS",
+    "temp": "C:\\Users\\basker\\AppData\\Local\\Temp",
+    "term_program": "vscode",
+    "term_program_version": "1.45.0",
+    "tmp": "C:\\Users\\basker\\AppData\\Local\\Temp",
+    "tvt": "C:\\Program Files (x86)\\Lenovo",
+    "userdomain": "ANAND",
+    "userdomain_roamingprofile": "ANAND",
+    "username": "basker",
+    "userprofile": "C:\\Users\\basker",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVG\\Antivirus\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll"
+  ]
+}

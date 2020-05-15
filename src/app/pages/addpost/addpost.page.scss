@@ -1,0 +1,20 @@
+ion-textarea
+{
+    min-height: 70px;
+}
+ion-item
+{
+  margin:15px;
+}
+ion-textarea
+{
+    color:black;
+    --placeholder-color:black;  
+}
+ion-avatar,
+ion-avatar > img{
+    border-radius:50%;
+    height:5rem;
+    width:5rem;
+    margin: auto;
+}

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      
+      <ion-buttons slot="start">
+        <ion-back-button ></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title> Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+         
+  
+    <ion-item *ngFor="let filterpost of filterposts" (click)="FilterPostclick(filterpost.category,filterpost.title,filterpost.description,filterpost.attachment,filterpost.PostId,filterpost.publishedby,filterpost.date)">
+                  
+                  <span *ngIf="(getExtension(filterpost) == 'jpg'||getExtension(filterpost) == 'png'||getExtension(filterpost) == 'jpeg')" > 
+                    <img  class="firstcard" src="http://192.168.43.80:3000/attachment/{{filterpost.attachment}}" class="imagecard" height="80" width="80">
+                      </span>
+                      <span *ngIf="(getExtension(filterpost) == 'pdf')"> 
+                        <img  class="firstcard" src="../../../assets/pdfimage.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(filterpost) == 'xls'||getExtension(filterpost)== 'xlsx' )"> 
+                        <img  class="firstcard" src="../../../assets/excel.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(filterpost) == 'doc'||getExtension(filterpost)== 'docx' )"> 
+                        <img  class="firstcard" src="../../../assets/word.png" class="imagecard" height="80" width="80" >
+                      </span>
+                      <span *ngIf="(getExtension(filterpost) == 'mp4'||getExtension(filterpost) == 'AVI'||getExtension(filterpost) == 'wmv')"> 
+                        <img  class="firstcard" src="../../../assets/video.png" class="imagecard" height="80" width="80" >
+                      </span>
+     
+       <ion-label>
+            <h2>{{filterpost.title}}</h2>
+            <h3>{{filterpost.description}}</h3>
+            
+          </ion-label>
+    </ion-item>
+
+   
+  </ion-list>
+</ion-content>

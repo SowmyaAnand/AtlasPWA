@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titleclass">{{this.title}}</ion-title>
+    
+      
+    <ion-button *ngIf="loginusertype=='Checker'" icon-only slot="end" (click)="messagelist()">
+      <ion-badge color="danger">{{msgcount}}</ion-badge>
+     <ion-icon  slot="end" name="mail" >
+       
+      </ion-icon>
+     
+     
+</ion-button>
+
+
+    <ion-icon *ngIf="loginusertype=='Maker'" slot="end" name="add-circle" class="icons" (click)="handleButtonClick()" >
+    </ion-icon>
+      <!-- <ion-icon *ngIf="loginusertype=='Checker'" slot="end" name="mail" class="icons" (click)="messagelist()" >
+       
+      </ion-icon> -->
+      <ion-icon slot="end" name="funnel" class="icons" (click)="filter()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  
+    
+
+  <ion-tabs  #myTabs (ionTabsDidChange)="onTabsChange()" (click)="tbchange()" >
+
+    <ion-tab-bar slot="bottom" class="tabs">
+
+      <ion-tab-button tab="Trending" >
+        <ion-badge color="danger">{{trendingunreadcount}}</ion-badge>
+        <ion-icon name="flame"></ion-icon>
+        <ion-label>TRENDING</ion-label>
+        </ion-tab-button>
+      
+      <ion-tab-button tab="Innovation">
+        <ion-badge color="danger">{{innovationunreadcount}}</ion-badge>
+        <ion-icon name="bulb"></ion-icon>
+        <ion-label>INNOVATION</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="ITKey">
+        <ion-badge color="danger">{{itunreadcount}}</ion-badge>
+        <ion-icon name="laptop-outline"></ion-icon>
+        <ion-label>IT KEY</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="People">
+        <ion-badge color="danger">{{peopleunreadcount}}</ion-badge>
+        <ion-icon name="person"></ion-icon>
+        <ion-label>PEOPLE</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="Training">
+        <ion-badge color="danger">{{trainingunreadcount}}</ion-badge>
+        <ion-icon name="book"></ion-icon>
+        <ion-label>TRAINING</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="CURRENTAFFAIRS">
+        <ion-badge color="danger">{{currentunreadcount}}</ion-badge>
+        <ion-icon name="newspaper-outline"></ion-icon>
+        <ion-label>CURRENT AFFAIRS</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="Accolades">
+        <ion-badge color="danger">{{accoladesunreadcount}}</ion-badge>
+        <ion-icon name="trophy"></ion-icon>
+        <ion-label>ACCOLADES</ion-label>
+      </ion-tab-button>
+   
+    </ion-tab-bar>
+  </ion-tabs>
+  
+</ion-content>

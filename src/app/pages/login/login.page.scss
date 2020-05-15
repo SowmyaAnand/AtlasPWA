@@ -1,0 +1,60 @@
+ion-content.background
+{
+    --background: url(../../../assets/img/wallpaper.png) 0 0/100% 100% no-repeat;
+    
+}
+
+h3{
+    color:white;
+}
+ion-grid {
+    height: 100%;
+    justify-content: center;
+    
+}
+
+.container-login100 {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;  
+  }
+  
+ .items
+
+ {
+   margin-bottom: 10px;
+   text-align: center;
+ }
+  .loginbutton
+  {
+margin-top:20px;
+  }
+  .loginheading
+  {
+      text-align: center;
+     font-weight: bold;
+    color: white;
+    --ion-background-color:blue;
+      margin-bottom: 20px;;
+  }
+  .wrap-login100 {
+    width: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+  }
+  

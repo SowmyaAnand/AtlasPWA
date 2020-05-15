@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Description</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card type="button" class="myCard">
+    <span *ngIf="(getExtension(attachment) == 'jpg'||getExtension(attachment) == 'png'||getExtension(attachment) == 'jpeg')"> 
+      <img  class="firstcard" src="http://192.168.43.80:3000/attachment/{{attachment}}" >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'pdf')"> 
+          <img  class="firstcard" src="../../../assets/pdfimage.png" >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'xls'||getExtension(attachment)== 'xlsx' )"> 
+          <img  class="firstcard" src="../../../assets/excel.png" >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'doc'||getExtension(attachment)== 'docx' )"> 
+          <img  class="firstcard" src="../../../assets/word.png" >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'mp4'||getExtension(attachment) == 'AVI'||getExtension(attachment) == 'wmv')"> 
+          <img  class="firstcard" src="../../../assets/video.png" >
+        </span>
+    </ion-card>
+    <ion-list lines="none" style="padding: 0px;margin: 0px;" >
+      <ion-item  style="min-height: 2em;">
+        <ion-label style="text-align: left;font-size: 10px;">
+          Published by {{Publishedby}} 
+        </ion-label>
+        <ion-label style="text-align: right;font-size: 10px;">
+          {{date}}
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label text-wrap style="text-align: left;font-size: 15px;text-align: center; font-weight: bold;">
+          {{title}}
+        </ion-label>
+        
+      </ion-item>
+     
+      <!-- <ion-item color="primary">
+        <ion-label style="text-align: center;font-size: 14px;" >
+          Description
+        </ion-label>
+      </ion-item> -->
+      <ion-item lines="none">
+        <ion-textarea [disabled]="true" style="color:gray">
+         {{description}}
+        </ion-textarea>
+      </ion-item>
+      
+      <ion-item>
+        <ion-icon slot="start" name="thumbs-up-sharp" (click)="Addlike()"  [style.color]="likes == 1 ? 'blue' : 'gray'"></ion-icon>
+        <ion-label style="text-align: left;font-size: 14px;">
+          {{likescount}} likes
+        </ion-label>
+        <ion-label style="text-align: right;font-size: 14px;" >
+          {{commentsno}} comments
+        </ion-label>
+      </ion-item>
+      <ion-item color="primary">
+        <ion-label style="text-align: center;font-size: 14px;" >
+         Comments
+        </ion-label>
+      </ion-item>
+      <ion-list *ngFor="let comment of comments; let idx=index;">
+        <ion-item>
+          <ion-label style="font-size: 14px;">{{comment.comment}}</ion-label>
+          <ion-label style="font-size: 8px;text-align: right;">{{comment.username}}</ion-label>
+        </ion-item>
+      </ion-list>
+     
+    </ion-list>
+    
+</ion-content>
+<ion-footer >
+  <ion-toolbar>
+    <ion-item>
+      <ion-input placeholder="Enter your comments" required [(ngModel)]="comnt"> </ion-input>
+      <ion-button color="primary" (click)="addcomment()">Post</ion-button>
+    </ion-item>  </ion-toolbar>
+</ion-footer>

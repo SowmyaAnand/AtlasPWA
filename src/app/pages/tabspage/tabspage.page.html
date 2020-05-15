@@ -1,0 +1,85 @@
+<!-- <ion-header style="text-align: center;color:white;padding: 10px;">
+  Unread Count - {{unreadcount}}
+</ion-header> -->
+
+<ion-content>
+    <ion-app>
+        <ion-header >
+        
+        </ion-header>
+        <ion-content  >
+          
+          <ion-list  *ngFor="let post of posts; let idx=index;">
+            <ion-card type="button" class="myCard" (click)="cardclick(post.category,post.title,post.description,post.attachment,post.PostId,post.publishedby,post.date,post)" *ngIf="idx==0">
+              <span *ngIf="(getExtension(post) == 'jpg'||getExtension(post) == 'png'||getExtension(post) == 'jpeg')"> 
+                <img  class="firstcard" src="http://192.168.43.80:3000/attachment/{{post.attachment}}" >
+                  </span>
+                  <span *ngIf="(getExtension(post) == 'pdf')"> 
+                    <img  class="firstcard" src="../../../assets/pdfimage.png" >
+                  </span>
+                  <span *ngIf="(getExtension(post) == 'xls'||getExtension(post)== 'xlsx' )"> 
+                    <img  class="firstcard" src="../../../assets/excel.png" >
+                  </span>
+                  <span *ngIf="(getExtension(post) == 'doc'||getExtension(post)== 'docx' )"> 
+                    <img  class="firstcard" src="../../../assets/word.png" >
+                  </span>
+                  <span *ngIf="(getExtension(post) == 'mp4'||getExtension(post) == 'AVI'||getExtension(post) == 'wmv')"> 
+                    <img  class="firstcard" src="../../../assets/video.png" >
+                  </span>
+             
+              <div class="myOverlay" style =" padding: 10px;"  >
+
+                 <div class="card-title" >
+                  <!-- <ion-icon class="lockclass" name={{lock}} *ngIf="post.PostId==pid" [style.color]="'red'"></ion-icon> -->
+
+                  <ion-icon class="lockclass" name={{lock}} [style.color]="(readpostnumbers.indexOf(post.PostId)>-1) ? 'green' : 'red'"></ion-icon>
+                 <ion-label  >
+                   <h2 style="color: white; font-weight: bold;">{{post.title}}</h2>
+                  
+                   <!-- <h3 style="white-space: nowrap; color: white;;">{{post.description}}</h3> -->
+                  </ion-label>
+                  <div style=" background-color:rgba(#000,0.3);">
+                    <!-- <ion-icon style="color: lightcyan; margin-right: 5px;" name="calendar-outline"></ion-icon>  -->
+                    <ion-label style="color: white;">{{post.date}}</ion-label> 
+                </div>
+                  
+                </div>
+                
+                  
+                  
+                 
+              </div>
+            </ion-card>
+            <ion-item  *ngIf="idx>0" (click)="listclick(post.category,post.title,post.description,post.attachment,post.PostId,post.publishedby,post.date,post)">
+              
+              <span *ngIf="(getExtension(post) == 'jpg'||getExtension(post) == 'png'||getExtension(post) == 'jpeg')"> 
+              <img class="imagecard" src="http://192.168.43.80:3000/attachment/{{post.attachment}}" height="80" width="80">
+                </span>
+                <span *ngIf="(getExtension(post) == 'pdf')"> 
+                  <img class="imagecard" src="../../../assets/pdfimage.png" height="100" width="100">
+                </span>
+                <span *ngIf="(getExtension(post) == 'xls'||getExtension(post)== 'xlsx' )"> 
+                  <img class="imagecard" src="../../../assets/excel.png" height="100" width="100">
+                </span>
+                <span *ngIf="(getExtension(post) == 'doc'||getExtension(post)== 'docx' )"> 
+                  <img class="imagecard" src="../../../assets/word.png" height="100" width="100">
+                </span>
+                <span *ngIf="(getExtension(post) == 'mp4'||getExtension(post) == 'AVI'||getExtension(post) == 'wmv')"> 
+                  <img class="imagecard" src="../../../assets/video.png" height="100" width="100">
+                </span>
+            <ion-icon class="lockclass"   [style.color]="(readpostnumbers.indexOf(post.PostId)>-1) ? 'green' : 'red'" name={{lock}} ></ion-icon>
+          
+          <ion-label>
+            <h2 style="font-weight: bold;">{{post.title}}</h2>
+            <h3 style="color: gray;">{{post.description}}</h3>
+            
+            <p>{{post.date}}</p>
+          </ion-label>
+        </ion-item>
+        
+       
+        </ion-list>
+        
+        </ion-content>
+      </ion-app>
+</ion-content>

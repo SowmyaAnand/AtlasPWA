@@ -1,0 +1,86 @@
+.tabs
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: left !important;
+}
+
+ion-tab-button
+{
+    margin: 20px !important;
+   
+}
+.titleclass
+{
+    
+     padding-inline-start: inherit !important;
+    //   padding-inline-end: 0 !important;
+    //   text-align: start !important;
+    
+}
+.icons
+{
+// display: inline-block;
+margin-left:10px;
+margin-right: 5px;
+min-width: 20px;
+min-height: 20px;
+position: relative;
+}
+
+::-webkit-scrollbar, *::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+  }
+  
+  ion-content {
+    overflow: hidden;
+    --overflow: hidden;
+  }
+  
+  .scroll-content {
+    overflow: hidden;
+  }
+  .notification-icon-button {
+    --overflow: visible;
+  
+    ion-badge {
+      position: absolute;
+      background: #f70b0b;
+      border-radius: 50%;
+      opacity: 0.9;
+      top: 0.1rem;
+      right: 0.2rem;
+    }
+  }
+    ion-button {
+      overflow: auto; 
+      ion-badge {
+        position: absolute;
+        opacity: 0.9;
+            top: 0.1rem;
+            left: 0.3rem;
+        & ~ ion-icon {
+          margin-left: 1rem;
+        }
+      }
+    }
+    #notification-button {            
+      position: relative;
+      width: 42px;
+      top:1px;
+      right: 1px;
+      overflow: visible!important;
+  }
+
+
+#notifications-badge {
+      background-color: red;
+      position: absolute;
+      top: -3px;
+      right: -1px;
+      border-radius: 50%;
+  }
+ 
+  

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/messagelist"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Post Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card type="button" class="myCard">
+   
+    <span *ngIf="(getExtension(attachment) == 'jpg'||getExtension(attachment) == 'png'||getExtension(attachment) == 'jpeg')" > 
+      <img  class="firstcard" src="http://192.168.43.80:3000/attachment/{{attachment}}" class="imagecard">
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'pdf')"> 
+          <img  class="firstcard" src="../../../assets/pdfimage.png" class="imagecard"  >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'xls'||getExtension(attachment)== 'xlsx' )"> 
+          <img  class="firstcard" src="../../../assets/excel.png" class="imagecard">
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'doc'||getExtension(attachment)== 'docx' )"> 
+          <img  class="firstcard" src="../../../assets/word.png" class="imagecard" >
+        </span>
+        <span *ngIf="(getExtension(attachment) == 'mp4'||getExtension(attachment) == 'AVI'||getExtension(attachment) == 'wmv')"> 
+          <img  class="firstcard" src="../../../assets/video.png" class="imagecard"  >
+        </span>
+    </ion-card>
+    <ion-list >
+      <ion-item>
+        <ion-label style="font-weight: bold;">
+          {{title}}
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label >
+          Published by {{Publishedby}}
+        </ion-label>
+        <ion-label style="text-align: end">
+          {{ddate}} 
+        </ion-label>
+      </ion-item>
+      <ion-item color="primary">
+        <ion-label style="text-align: center;" >
+          Description
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-textarea>
+        {{description}}
+        </ion-textarea>
+      </ion-item>
+      
+      <ion-list style="margin-left:40px;margin-right:40px;" >
+        <ion-item >
+          <ion-button (click)="Accept()" slot="start"  color="success">Accept</ion-button>
+          <ion-button (click)="Reject()"slot="end"  color="danger">Reject</ion-button>
+        </ion-item>
+      </ion-list>
+     
+    </ion-list>
+</ion-content>
